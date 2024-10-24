@@ -176,14 +176,14 @@ header .navbar {
   border: none;
   outline: none;
   cursor: pointer;
-  background: rgb(244,151,108);
+  background: rgb(225, 143, 106);
   color: #fff;
   border-radius: 0 4px 4px 0;
   transition: background 0.2s ease;
 }
 
 .hero-section .search-form button:hover {
-  background: rgb(248, 122, 80);
+  background: rgb(207, 143, 122);
 }
 
 .hero-section .popular-tags {
