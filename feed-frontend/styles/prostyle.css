@@ -1,0 +1,340 @@
+@font-face {
+  font-family: Feed;
+  src: url(/Assets/GT-Pressura-Mono-Regular.woff);
+}
+
+@font-face {
+  font-family: FeedBody;
+  src: url(/Assets/GT-Pressura-Mono-Regular.woff);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: FeedBody;
+  font-weight: 200;
+  font-style: normal;
+}
+
+body {
+  background: rgb(250, 244, 240);
+  transition: all .2s linear;
+}
+
+header {
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  padding: 20px;
+}
+
+header .navbar {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff3d;
+  border-radius: 5vh;
+}
+
+.navbar h1{
+    font-size: 7vh;
+  font-family: Feed;
+
+}
+
+/* .navbar .material-symbols-outlined{
+    position: absolute;
+    padding-left: 135vh;
+    font-size: 3vh;
+    top: 4vh;
+} */
+
+.hero-section {
+  height: 60vh;
+  position: relative;
+  display: flex;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4vh;
+}
+
+.hero-section .producerName{
+    font-size: 4vh;
+    padding-bottom: 10vh;
+}
+
+.hero-section .content {
+  max-width: 1280px;
+  margin: 0 auto 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  
+}
+
+.content1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2vh;
+  width: 40vh;
+  text-align: center;
+  transition: all 2s, color 1s;
+}
+
+.content1 h2{
+  font-size: 3vh;
+}
+
+.content2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.button-28 {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 50px;
+  width: 10vh;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+}
+
+.button-28:disabled {
+  pointer-events: none;
+}
+
+.button-28:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-28:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+
+.hero-section .content h1 {
+  color:black;
+  font-size: 3rem;
+  max-width: 630px;
+  line-height: 65px;
+}
+
+.hero-section .search-form {
+  height: 48px;
+  display: flex;
+  max-width: 630px;
+  margin-top: 30px;
+}
+
+.hero-section .search-form input {
+  height: 100%;
+  width: 32vh;
+  border: none;
+  outline: none;
+  padding: 0 15px;
+  font-size: 1rem;
+  border-radius: 4px 0 0 4px;
+}
+
+.hero-section .search-form button {
+  height: 100%;
+  width: 60px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: rgb(244,151,108);
+  color: #fff;
+  border-radius: 0 4px 4px 0;
+  transition: background 0.2s ease;
+}
+
+.hero-section .search-form button:hover {
+  background: rgb(248, 122, 80);
+}
+
+.hero-section .popular-tags {
+  display: flex;
+  color:black;
+  gap: 25px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-top: 25px;
+}
+
+.hero-section .popular-tags .tags {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  list-style: none;
+}
+
+.hero-section .tags li a {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 4px 12px;
+  border-radius: 50px;
+  transition: 0.2s ease;
+}
+
+.hero-section .tags li a:hover {
+  color: #000;
+  background: #fff;
+}
+
+.navbar #hamburger-btn {
+  color: #fff;
+  cursor: pointer;
+  display: none;
+  font-size: 1.7rem;
+}
+
+.navbar #close-menu-btn {
+  position: absolute;
+  display: none;
+  color: #000;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+
+
+
+/* form */
+
+#trackBody{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:25px;
+  height: 100vh;
+  display: none;
+}
+
+
+#trackBody form{
+  padding:20px;
+  height: 60vh;
+  width:80vh;
+  background: #ffffff81;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+
+#trackBody form .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap:15px;
+}
+
+#trackBody form .row .col{
+  flex:1 1 250px;
+}
+
+#trackBody form .row .col .title{
+  font-size: 20px;
+  color:#333;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+#trackBody form .row .col .inputBox{
+  margin:15px 0;
+}
+
+#trackBody form .row .col .inputBox span{
+  margin-bottom: 10px;
+  display: block;
+}
+
+#trackBody form .row .col .inputBox input{
+  width: 100%;
+  border:1px solid #ccc;
+  padding:10px 15px;
+  font-size: 15px;
+  text-transform: none;
+}
+
+#trackBody form .row .col .inputBox input:focus{
+  border:1px solid #000;
+}
+
+#trackBody form .row .col .flex{
+  display: flex;
+  gap:15px;
+}
+
+#trackBody form .row .col .flex .inputBox{
+  margin-top: 5px;
+}
+
+#trackBody form .row .col .inputBox img{
+  height: 34px;
+  margin-top: 5px;
+  filter: drop-shadow(0 0 1px #000);
+}
+
+#trackBody form .submit-btn{
+  width: 100%;
+  padding:12px;
+  font-size: 17px;
+  background: rgb(244,151,108);
+  color:#fff;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+#trackBody form .submit-btn:hover{
+  background: rgb(248, 122, 80);
+}
+
+.track{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  display: none;
+}
+
+#chartdiv1 {
+  width: 100%;
+  height: 80vh;
+}
+
+.demo-theme-dark .demo-background {
+  background: #000;
+}

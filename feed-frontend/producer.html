@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FEED-Producer</title>
+  <link rel="stylesheet" href="styles/prostyle.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1>FEED</h1>
+    </nav>
+  </header>
+  <section class="hero-section">
+    <h1 class="producerName"></h1>
+    <div class="content">
+        <div class="content1">
+            <h1>Want to Create a New Batch?</h1>
+      <form action="#" class="create-form">
+<button class="button-28" role="button" >Create</button>
+      </form>
+        </div>
+      <h1 class="orWord">OR</h1>
+      <div class="content2">
+        <h1>Search For a Batch</h1>
+      <form action="#" class="search-form">
+        <input type="text" placeholder="#Enter the Batch Number" required>
+        <button class="batchSearch" type="sumbit">search</button>
+      </form>
+      </div> 
+    </div>
+  </section>
+  <div id="trackBody">
+    <form class="batch-form" action="">
+
+        <div class="row">
+
+            <div class="col">
+
+                <h3 class="title">Product Details</h3>
+
+                <div class="inputBox">
+                    <span>Product Name :</span>
+                    <input type="text" placeholder="Like Tomato">
+                </div>
+                <div class="inputBox">
+                    <span>Product Type :</span>
+                    <input type="email" placeholder="Like Fruits,Vegetables">
+                </div>
+                <div class="inputBox">
+                    <span>Harvest Date :</span>
+                    <input type="text" placeholder="dd/mm/yy">
+                </div>
+                <div class="inputBox">
+                    <span>Add Photo :</span>
+                    <input type="file" id="firm-image" name="firm-image" accept="image/*">
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>City :</span>
+                        <input type="text" placeholder="City">
+                    </div>
+                    <div class="inputBox">
+                        <span>State :</span>
+                        <input type="text" placeholder="State">
+                    </div>
+
+                </div>
+
+              </div>
+    
+        </div>
+
+        <input type="submit" value="proceed to create" class="submit-btn">
+
+    </form>
+
+  </div>
+  <div class="track">
+    <div id="chartdiv1"></div>
+  </div>
+  <script src="https://www.amcharts.com/lib/4/core.js"></script>
+<script src="https://www.amcharts.com/lib/4/charts.js"></script>
+<script src="https://www.amcharts.com/lib/4/plugins/timeline.js"></script>
+<script src="https://www.amcharts.com/lib/4/plugins/bullets.js"></script>
+<script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+  <script src="scripts/proscript.js"></script>
+</body>
+</html>
